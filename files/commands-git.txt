@@ -1,0 +1,26 @@
+-git init
+-git add .
+
+1)connect: 
+-git remote add origin https://github.com/rutujakhobare-  gif/practical.git
+-git branch -m main
+
+2)push:
+git push -u origin main
+
+3)pull:
+-git pull origin main
+
+4)branch
+-git checkout -b feature1
+
+5)make change+commit
+-git add .
+-git commit -m "new change"
+
+6)merge
+-git checkout main
+-git merge feature1
+
+7)push again:
+git push origin main
