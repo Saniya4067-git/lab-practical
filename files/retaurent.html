@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu App</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet"
+    href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        .foodimg{
+            width:100%;
+            max-width:300px;
+            border-radius:10px;
+        }
+
+        .price{
+            color:red;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .desc{
+            font-size:18px;
+            color:#333;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+
+<div data-role="page" id="home">
+
+    <div data-role="header" style="background:orange;color:white;">
+        <h1>Food Paradise</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <h2 style="color:green;">Restaurant Menu</h2>
+
+        <ul data-role="listview" data-inset="true">
+
+            <li>
+                <a href="#pizza">
+                    Pizza
+                </a>
+            </li>
+
+            <li>
+                <a href="#burger">
+                    Burger
+                </a>
+            </li>
+
+            <li>
+                <a href="#pasta">
+                    Pasta
+                </a>
+            </li>
+
+            <li>
+                <a href="#icecream">
+                    Ice Cream
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div data-role="footer" style="background:orange;color:white;">
+        <h4>Welcome to Food Paradise</h4>
+    </div>
+
+</div>
+
+
+<!-- PIZZA PAGE -->
+
+<div data-role="page" id="pizza">
+
+    <div data-role="header" style="background:red;color:white;">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Pizza</h1>
+    </div>
+
+    <div role="main" class="ui-content" align="center">
+
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+        class="foodimg">
+
+        <h2>Cheese Pizza</h2>
+
+        <p class="price">Price: ₹250</p>
+
+        <p class="desc">
+            Delicious cheese pizza with fresh vegetables and extra toppings.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- BURGER PAGE -->
+
+<div data-role="page" id="burger">
+
+    <div data-role="header" style="background:brown;color:white;">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Burger</h1>
+    </div>
+
+    <div role="main" class="ui-content" align="center">
+
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+        class="foodimg">
+
+        <h2>Veg Burger</h2>
+
+        <p class="price">Price: ₹120</p>
+
+        <p class="desc">
+            Crispy veg burger served with cheese and fresh salad.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PASTA PAGE -->
+
+<div data-role="page" id="pasta">
+
+    <div data-role="header" style="background:green;color:white;">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Pasta</h1>
+    </div>
+
+    <div role="main" class="ui-content" align="center">
+
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"
+        class="foodimg">
+
+        <h2>White Sauce Pasta</h2>
+
+        <p class="price">Price: ₹180</p>
+
+        <p class="desc">
+            Creamy white sauce pasta with herbs and vegetables.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ICE CREAM PAGE -->
+
+<div data-role="page" id="icecream">
+
+    <div data-role="header" style="background:purple;color:white;">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Ice Cream</h1>
+    </div>
+
+    <div role="main" class="ui-content" align="center">
+
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+        class="foodimg">
+
+        <h2>Chocolate Ice Cream</h2>
+
+        <p class="price">Price: ₹90</p>
+
+        <p class="desc">
+            Tasty chocolate ice cream topped with dry fruits and chocolate syrup.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPPU TE-IT Syllabus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #1e3c72;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .btn-outline-info {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SPPU TE-IT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#structure">Syllabus Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="#details">Detailed Syllabus</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search subjects...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <h1>Third Year IT - SPPU</h1>
+  <p>Updated Syllabus Structure (2024 Pattern)</p>
+</header>
+
+<!-- Syllabus Structure -->
+<div class="container mt-5" id="structure">
+  <h3 class="text-center mb-4">Syllabus Structure (Semester-wise)</h3>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" class="card-img-top" alt="Subject Image">
+        <div class="card-body">
+          <h5 class="card-title">Semester V</h5>
+          <ul>
+            <li>Design & Analysis of Algorithms</li>
+            <li>Software Engineering & Project Management</li>
+            <li>Computer Networks</li>
+            <li>Database Management Systems</li>
+            <li>Professional Elective I</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://cdn-icons-png.flaticon.com/512/4359/4359951.png" class="card-img-top" alt="Subject Image">
+        <div class="card-body">
+          <h5 class="card-title">Semester VI</h5>
+          <ul>
+            <li>Information & Cyber Security</li>
+            <li>Web Technologies</li>
+            <li>Data Science & ML</li>
+            <li>Open Elective</li>
+            <li>Mini Project / Internship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <div>
+        <button class="btn btn-outline-info btn-lg" onclick="showSyllabus()">📄 View Detailed Syllabus</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Detailed Syllabus Section -->
+<div class="container mt-5 d-none" id="details">
+  <h3 class="text-center mb-3">Detailed Syllabus</h3>
+  <div class="accordion" id="syllabusAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Design & Analysis of Algorithms
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Topics: Recursion, Divide and Conquer, Greedy, Dynamic Programming, Graph Algorithms, Complexity Analysis.
+        </div>
+      </div>
+    </div>
+    <!-- Add more accordion items similarly -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Web Technologies
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Topics: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB.
+        </div>
+      </div>
+    </div>
+    <!-- You can add more subjects here -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 SPPU TE-IT Portal. All Rights Reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+  function showSyllabus() {
+    document.getElementById("details").classList.remove("d-none");
+    document.getElementById("details").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
